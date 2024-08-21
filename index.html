@@ -1,11 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .card {
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        width: 22%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .card p {
+        padding: 0 1rem;
+    }
+
+    .card .btn {
+        display: inline-block;
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .card {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            width: 90%;
+        }
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
+    }
+  </style>
+
+  <title>Document</title>
+
 </head>
 <body>
-    
+  <header>
+      <nav>
+          <ul>
+              <li><a href="#enlace1">Enlace 1</a></li>
+              <li><a href="#enlace2">Enlace 2</a></li>
+              <li><a href="#enlace3">Enlace 3</a></li>
+              <li><a href="#enlace4">Enlace 4</a></li>
+              <li><a href="#enlace5">Enlace 5</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <section class="card-container">
+          <div class="card">
+              <img src="imagen1.jpg" alt="Imagen 1">
+              <h2>Título 1</h2>
+              <p>Descripción de la tarjeta 1.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+          <div class="card">
+              <img src="imagen2.jpg" alt="Imagen 2">
+              <h2>Título 2</h2>
+              <p>Descripción de la tarjeta 2.</p>
+              <a href="https://example.com" class="btn">Detalles</a>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <p>Desarrollado por [Tu Nombre]</p>
+      <ul>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://facebook.com">Facebook</a></li>
+          <li><a href="https://instagram.com">Instagram</a></li>
+      </ul>
+  </footer>
 </body>
 </html>
